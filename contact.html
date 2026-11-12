@@ -1,0 +1,83 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact LifeLink</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            padding: 20px;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #ffe6e6, #ffffff);
+        }
+
+        .contact-card {
+            width: 100%;
+            max-width: 450px;
+            padding: 30px 20px;
+            text-align: center;
+            background: white;
+            border-radius: 16px;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            color: #b30000;
+            font-size: 30px;
+        }
+
+        p {
+            color: #444;
+            font-size: 16px;
+            overflow-wrap: anywhere;
+        }
+
+        a {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 12px 20px;
+            background: #b30000;
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+        }
+
+        a:hover {
+            background: #800000;
+        }
+
+        @media (max-width: 480px) {
+            .contact-card {
+                padding: 25px 15px;
+            }
+
+            h1 {
+                font-size: 25px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="contact-card">
+        <h1>Contact Us</h1>
+
+        <p>Email: lifelink@gmail.com</p>
+        <p>Phone: 9876543210</p>
+
+        <a href="index.html">Back to Home</a>
+    </div>
+
+</body>
+</html>

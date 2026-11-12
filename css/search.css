@@ -1,0 +1,343 @@
+
+body {
+    margin: 0;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #ffe6e6, #ffffff);
+    min-height: 100vh;
+    box-sizing: border-box;
+}
+
+
+.search-container {
+    width: 100%;
+    max-width: 420px;
+    min-width: 0;
+    background: white;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+    box-sizing: border-box;
+}
+
+.search-container h1{
+    text-align:center;
+    color:#b30000;
+    margin-bottom:10px;
+}
+
+.search-container p{
+    text-align:center;
+    color:#555;
+    margin-bottom:25px;
+}
+
+label{
+    display:block;
+    margin-bottom:8px;
+    font-weight:bold;
+    color:#333;
+}
+
+input,
+select{
+    width:100%;
+    padding:12px;
+    margin-bottom:18px;
+    border:1px solid #ccc;
+    border-radius:8px;
+    box-sizing:border-box;
+    font-size:15px;
+}
+
+button{
+    width:100%;
+    padding:14px;
+    border:none;
+    border-radius:10px;
+    background:#b30000;
+    color:white;
+    font-size:17px;
+    cursor:pointer;
+}
+
+button:hover{
+    background:#8b0000;
+}
+
+.donor-card {
+    display: block;
+    background: #ffffff;
+    padding: 25px;
+    margin: 20px auto;
+    width: 100%;
+    max-width: 600px;
+    border-radius: 16px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.12);
+    border-left: 6px solid #b30000;
+    box-sizing: border-box;
+}
+
+.donor-card h2 {
+    color: #b30000;
+    margin-top: 0;
+}
+
+.donor-card p {
+    font-size: 16px;
+    margin: 12px 0;
+}
+
+.donor-card .call-btn {
+    display: inline-block;
+    background: #b30000;
+    color: white;
+    padding: 10px 18px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Arrange donor cards neatly */
+.donor-card {
+    width: 100%;
+    max-width: none;
+    margin: 0;
+    height: 100%;
+}
+
+/* Grid container for donor cards */
+.donor-container {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 24px;
+    max-width: 1200px;
+    margin: 30px auto;
+    padding: 0 20px;
+    align-items: stretch;
+}
+
+/* Tablet layout */
+@media (max-width: 900px) {
+    .donor-container {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+/* Mobile layout */
+@media (max-width: 600px) {
+    .donor-container {
+        grid-template-columns: 1fr;
+        padding: 0 12px;
+    }
+}
+
+h1 {
+    text-align: center;
+    color: #b30000;
+    font-size: 32px;
+    margin: 20px 0 30px;
+}
+
+body {
+    margin: 0;
+    padding: 20px;
+}
+
+h1 {
+    display: block;
+    width: 100%;
+    text-align: center;
+    color: #b30000;
+    margin: 0 auto 30px;
+    padding: 15px 0;
+    order: -1;
+}
+
+body > h1 {
+    position: relative;
+    display: block;
+    width: 100%;
+    margin: 0 0 25px;
+    padding: 15px 0;
+    text-align: center;
+    color: #b30000;
+    font-size: 32px;
+    order: initial;
+}
+
+body {
+    margin: 0;
+    padding: 20px;
+}
+
+body > h1 {
+    margin-top: 0;
+    padding-top: 0;
+}
+
+.donor-container {
+    margin-top: 0;
+}
+.results-title {
+    display: block;
+    clear: both;
+    width: 100%;
+    text-align: center;
+    font-size: 32px;
+    color: #b30000;
+    margin: 0 0 25px;
+    padding: 15px 0;
+    box-sizing: border-box;
+}
+
+/* Center the Find Donor search form */
+body:has(form select[name="blood_group"]) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+body:has(form select[name="blood_group"]) form {
+    width: 100%;
+    max-width: 650px;
+    box-sizing: border-box;
+    margin: 0 auto;
+    padding: 25px;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Center the Find Donor search form */
+body:has(select[name="blood"]) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+body:has(select[name="blood"]) form {
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 25px;
+    box-sizing: border-box;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Mobile-friendly donor search and results */
+@media (max-width: 600px) {
+
+    body {
+        padding: 12px;
+    }
+
+    form {
+        width: 100%;
+        max-width: 100%;
+        padding: 18px;
+        box-sizing: border-box;
+    }
+
+    input,
+    select,
+    form button {
+        width: 100%;
+        max-width: 100%;
+        box-sizing: border-box;
+    }
+
+    .donor-container {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .results-title {
+        font-size: 24px;
+        text-align: center;
+    }
+}
+
+@media (max-width: 600px) {
+    body:has(select[name="blood"]) {
+        width: 100%;
+        padding: 12px;
+        align-items: center;
+        box-sizing: border-box;
+    }
+
+    body:has(select[name="blood"]) form {
+        width: 100%;
+        max-width: 100%;
+        margin: 0;
+        padding: 16px;
+        box-sizing: border-box;
+    }
+}
+/* Find Blood page layout */
+body.search-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 16px;
+    box-sizing: border-box;
+}
+
+body.search-page form {
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+body.search-page form input,
+body.search-page form select,
+body.search-page form button {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+@media (max-width: 600px) {
+    body.search-page {
+        padding: 12px;
+    }
+
+    body.search-page form {
+        padding: 16px;
+    }
+}
+body.search-page {
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+    margin: 0;
+    padding: 12px;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+body.search-page form {
+    width: 100%;
+    max-width: 420px;
+    min-width: 0;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+body.search-page form input,
+body.search-page form select,
+body.search-page form button {
+    width: 100%;
+    min-width: 0;
+    max-width: 100%;
+    box-sizing: border-box;
+}

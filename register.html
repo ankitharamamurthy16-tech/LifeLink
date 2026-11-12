@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LifeLink - Donor Registration</title>
+
+    <link rel="stylesheet" href="css/register.css">
+
+</head>
+
+<body>
+
+    <div class="form-container">
+
+        <div class="logo">
+            🩸
+        </div>
+
+        <h1>LifeLink</h1>
+        <h2>Blood Donor Registration</h2>
+        <form action="php/register.php" method="POST">
+
+            <label>Full Name</label>
+            <input type="text" name="name" placeholder="Enter your name" required>
+
+
+            <label>Age</label>
+            <input type="number" name="age" placeholder="Enter your age" required>
+
+
+            <label>Gender</label>
+            <select name="gender" required>
+                <option value="">Select Gender</option>
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+                <option value="Other">Other</option>
+            </select>
+
+
+            <label>Blood Group</label>
+            <select name="blood" required>
+
+                <option value="">Select Blood Group</option>
+                <option value="A+">A+</option>
+                <option value="A-">A-</option>
+                <option value="B+">B+</option>
+                <option value="B-">B-</option>
+                <option value="O+">O+</option>
+                <option value="O-">O-</option>
+                <option value="AB+">AB+</option>
+                <option value="AB-">AB-</option>
+
+            </select>
+
+
+            <label>Phone</label>
+            <input type="tel" name="phone" required>
+
+            <label>City</label>
+            <input type="text" name="city" required>
+
+            <button type="submit">Register</button>
+
+</form>
+
+
+            
+            
+
+
+            
+            
+
+
+    
+
+
+        
+
+        <p>
+            Already registered?
+            <a href="login.html">Login</a>
+        </p>
+
+
+    </div>
+
+
+</body>
+
+</html>

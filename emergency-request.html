@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emergency Blood Request | LifeLink</title>
+
+    <link rel="stylesheet" href="css/emergency.css">
+</head>
+<body>
+
+<div class="emergency-container">
+
+    <h1>🚨 Emergency Blood Request</h1>
+
+    <p>Fill in the details to request blood during an emergency.</p>
+
+    <form action="php/emergency.php" method="POST">
+
+        <label>Patient Name</label>
+        <input type="text" name="patient_name" required>
+
+        <label>Blood Group Required</label>
+        <select name="blood_group" required>
+            <option value="">Select Blood Group</option>
+            <option>A+</option>
+            <option>A-</option>
+            <option>B+</option>
+            <option>B-</option>
+            <option>AB+</option>
+            <option>AB-</option>
+            <option>O+</option>
+            <option>O-</option>
+        </select>
+
+        <label>Hospital Name</label>
+        <input type="text" name="hospital" required>
+
+        <label>Contact Number</label>
+        <input type="text" name="phone" required>
+
+        <label>City</label>
+        <input type="text" name="city" required>
+
+        <label>Emergency Message</label>
+        <textarea name="message" rows="5" required></textarea>
+
+        <button type="submit">Submit Emergency Request</button>
+
+    </form>
+
+</div>
+
+</body>
+</html>

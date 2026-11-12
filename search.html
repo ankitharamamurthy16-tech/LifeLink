@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find Blood Donor | LifeLink</title>
+
+    <link rel="stylesheet" href="css/search.css">
+</head>
+<body class="search-page">
+
+<div class="search-container">
+
+    <h1>🩸 Find a Blood Donor</h1>
+    <p>Search donors by blood group and city.</p>
+
+    <form action="php/search.php" method="GET">
+
+        <label>Blood Group</label>
+        <select name="blood" required>
+
+            <option value="">Select Blood Group</option>
+            <option>A+</option>
+            <option>A-</option>
+            <option>B+</option>
+            <option>B-</option>
+            <option>AB+</option>
+            <option>AB-</option>
+            <option>O+</option>
+            <option>O-</option>
+
+        </select>
+
+        <label>City</label>
+        <input type="text" name="city" placeholder="Enter your city" required>
+
+        <button type="submit">Search Donors</button>
+
+    </form>
+
+</div>
+
+</body>
+</html>
